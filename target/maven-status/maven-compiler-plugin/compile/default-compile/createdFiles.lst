@@ -1,0 +1,4 @@
+checkinServlet\CheckinServlet.class
+com\mycompany\airbnb_database_application\JakartaRestConfiguration.class
+com\mycompany\airbnb_database_application\resources\JakartaEE11Resource.class
+reservationRecords\Reservations.class
