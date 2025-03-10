@@ -52,33 +52,6 @@ public class Reservations { //resv table for mySQL
             return false;
         }
     }
-    
-    public void checkInfo(){
-        try(Connection connection = DriverManager.getConnection(dburl,user,pass)){
-            Statement query = connection.createStatement();
-            ResultSet result = query.executeQuery("SELECT guest.guestID, guest.firstName, guest.lastName, room.roomNumber\n"
-                                                + "FROM guest_account_record guest\n"
-                                                + "LEFT JOIN reservation_record resv ON guest.guestID = resv.bookRefID\n"
-                                                + "LEFT JOIN room_record room ON room.roomNumber = resv.roomRefID");
-            int guestID, roomNumber;
-            String firstName, lastName;
-            
-            System.out.println("Reserved:");
-            System.out.println("guestID   fullName        roomNumber");
-            
-            while(result.next()){
-                guestID = result.getInt("guestID");
-                firstName = result.getString("firstName");
-                lastName = result.getString("lastName");
-                roomNumber = result.getInt("roomNumber");
-                
-                System.out.println(guestID+"         "+firstName+" "+lastName+"   "+roomNumber);
-            }
-            
-        } catch(SQLException sqle){
-            System.err.println(sqle.getMessage());
-        }
-    }
             
     //setters
     public void setReserveID(int reserveID){
