@@ -1,0 +1,27 @@
+# Ignore target/ (Maven build output)
+target/
+
+# Ignore IDE-specific files
+.vscode/
+.idea/
+*.iml
+
+# Ignore Eclipse-specific files
+.classpath
+.project
+.settings/
+
+# Ignore NetBeans-specific files
+nbproject/
+nb-configuration.xml
+
+# Ignore OS-generated files
+.DS_Store
+Thumbs.db
+
+# Ignore compiled class files
+*.class
+
+# Ignore logs and temporary files
+logs/
+*.log
