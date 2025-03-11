@@ -42,7 +42,7 @@ public class CheckinServlet extends HttpServlet {
             try{ 
                 int reserveID = Integer.parseInt(sReserveID); //convert string into integer type
                 resv.setReserveID(reserveID); //set the table attribute to the reservationID
-                boolean success = resv.updateCheckIn();
+                boolean success = resv.checkIn();
                 
                 if(success){
                     message = "Reservation ID " + reserveID + " Successfully Checked-in";
