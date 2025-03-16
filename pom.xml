@@ -5,7 +5,7 @@
     <artifactId>Airbnb_Database_Application</artifactId>
     <version>1.0-SNAPSHOT</version>
     <packaging>war</packaging>
-    <name>Airbnb_Database_Application-1.0-SNAPSHOT</name>
+    <name>Airbnb_DBApp</name>
     
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
